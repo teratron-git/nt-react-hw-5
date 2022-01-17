@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./App.css"
 import Card from "./components/Card"
+import Decomposition from "./components/Decomposition"
 import TaskSwitcher from "./components/TaskSwitcher"
 
 const App = () => {
@@ -38,9 +39,9 @@ const App = () => {
         </div>
       )}
 
-      {task == "2" && <>Task 2</>}
+      {task == "2" && <Decomposition />}
 
-      {task == "3" && <>Task 3</>}
+      {/* {task == "3" && <>Task 3</>} */}
     </>
   )
 }
